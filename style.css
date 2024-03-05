@@ -1,0 +1,188 @@
+body {
+    background-color: #06f216;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image {
+    position: relative;
+    width: 405;
+    height: auto;
+    margin-left: 45px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1; /* Ensure overlay is above the image */
+}
+
+.image:hover .overlay {
+    opacity: 1;
+    z-index: 2; /* Ensure overlay is above other images */
+}
+
+@font-face { font-family: "Shrigley-Regular"; src: url("Fonts/Shrigley-Regular.woff2") format("woff2"); }
+    h1 {
+        font-family: Shrigley-Regular;
+        font-size: 200px;
+        text-align: center;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+
+    h2 {
+        font-family: Shrigley-Regular;
+        font-size: 75px;
+        text-align: left;
+        margin-left: 55px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        border: 0px;
+        padding: 0px;
+    }
+    
+    h3 {
+        font-family: Shrigley-Regular;
+        font-size: 75px;
+        text-align: left;
+        margin-left: 50px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        border: 0px;
+        padding: 0px;
+    }
+
+.billedetekst {
+    font-family: Shrigley-Regular;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.site-footer {
+    padding-bottom: 0rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Shrigley-Regular; 
+}
+
+.menu {
+    font-family: Shrigley-Regular;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0px;
+    border: 0px;
+    padding: 50px;
+}
+
+.menu:hover {
+    text-decoration: none;
+}
+
+.menu:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+a {
+    font-family: Shrigley-Regular;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:visited {
+    color: black;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #06f216;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+button {
+    font-size: 20px;
+    font-family: Shrigley-Regular;
+    width: auto;
+    height: auto;
+    background-color: #079e11;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+button:hover {
+    font-size: 21;
+    cursor: pointer;
+}
+button:active {
+    font-size: 19px;
+}
